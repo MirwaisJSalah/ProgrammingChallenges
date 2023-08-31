@@ -23,8 +23,6 @@ import_csv_to_sqlite(cursor, '/Users/mirwaisjansalah/Desktop/ProgrammingChalleng
 import_csv_to_sqlite(cursor, '/Users/mirwaisjansalah/Desktop/ProgrammingChallenges/sql-assessment/website_revenue.csv', 'website_revenue')
 
 
-# Importing csv files to SQLite (Assuming you have a function to do this)
-
 # Query 1: Sum of impressions by day
 query1 = "select date, SUM(impressions) from marketing_data group by date;"
 
