@@ -13,17 +13,17 @@ def import_csv_to_sqlite(cursor, csv_path, table_name):
             cursor.execute(f"INSERT INTO {table_name} VALUES ({', '.join(['?' for _ in values])});", values)
     print(f"Imported data into {table_name}")
 
-# Create SQLite database and cursor
+# Creating SQLite database and cursor
 conn = sqlite3.connect(":memory:")
 cursor = conn.cursor()
 
-# Import csv files to SQLite
+# Importing csv files to SQLite
 import_csv_to_sqlite(cursor, '/Users/mirwaisjansalah/Desktop/ProgrammingChallenges/sql-assessment/campaign_info.csv', 'campaign_info')
 import_csv_to_sqlite(cursor, '/Users/mirwaisjansalah/Desktop/ProgrammingChallenges/sql-assessment/marketing_performance.csv', 'marketing_data')
 import_csv_to_sqlite(cursor, '/Users/mirwaisjansalah/Desktop/ProgrammingChallenges/sql-assessment/website_revenue.csv', 'website_revenue')
 
 
-# Import csv files to SQLite (Assuming you have a function to do this)
+# Importing csv files to SQLite (Assuming you have a function to do this)
 
 # Query 1: Sum of impressions by day
 query1 = "select date, SUM(impressions) from marketing_data group by date;"
