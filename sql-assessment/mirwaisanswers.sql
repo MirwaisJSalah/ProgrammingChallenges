@@ -35,6 +35,9 @@ group by ci.name
 order by roas desc
 limit 1;
 
+
+
+
 -- Query 6
 select strftime('%w', datetime(date)) as day_of_week, sum(revenue) as total_revenue
 from website_revenue

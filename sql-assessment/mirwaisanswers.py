@@ -96,17 +96,17 @@ for date_str, revenue in data:
 best_day, best_revenue = max(revenue_by_day.items(), key=lambda x: x[1])
 
 weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-print(f"Answer to Bonus Query: Best day is {weekdays[best_day]} with total revenue of {best_revenue}")
+# print(f"Answer to Bonus Query: Best day is {weekdays[best_day]} with total revenue of {best_revenue}")
 
 
 conn.close()
 
 
-print("Answer to Query 1:", result1)
+# print("Answer to Query 1:", result1)
 print("Answer to Query 2:", result2)
-print("Answer to Query 3:", result3)
-print("Answer to Query 4:", result4)
-print("Answer to Query 5:", result5)
+# print("Answer to Query 3:", result3)
+# print("Answer to Query 4:", result4)
+# print("Answer to Query 5:", result5)
 
 
 

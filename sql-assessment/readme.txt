@@ -5,6 +5,7 @@ Answer to Query 1: [('2023-07-24 0:00:00', 1423), ('2023-07-26 0:00:00', 1547), 
 Answer to Query 2: [('NY', 46398), ('GA', 39666), ('OH', 37577)]
 Answer to Query 3: [('Campaign1', 4170.51, 42810, 38724, 151792), ('Campaign2', 4075.5, 40938, 29652, 155308), ('Campaign3', 15809.039999999999, 158280, 116048, 551672), ('Campaign4', 3970.1399999999994, 47508, 33318, 163396), ('Campaign5', 4077.1499999999996, 25641, 33663, 136404)]
 Answer to Query 4: [('NY', 346)]
+Answer to Query 5: [('Campaign4', 41.15623126640371)]
 Answer to Bonus Query: Best day is Monday with total revenue of 49043.0
 
 I ran the queries in Python first and then added them to the mirwaisanswers.sql file, I am mostly used to using SQL in python, but as I had no server i could
